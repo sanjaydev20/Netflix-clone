@@ -1,0 +1,93 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#0f0f0f;
+  color:white;
+}
+
+/* NAV */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  background:#000;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.brand{
+  color:red;
+  font-size:28px;
+}
+
+.brand span{
+  color:white;
+}
+
+.nav input{
+  padding:8px 15px;
+  border-radius:20px;
+  border:none;
+  outline:none;
+}
+
+/* HERO */
+.hero{
+  height:60vh;
+  background:
+  linear-gradient(to bottom,rgba(0,0,0,.3),#0f0f0f),
+  url("https://image.tmdb.org/t/p/original/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding-left:40px;
+}
+
+.hero h2{
+  font-size:42px;
+}
+
+.hero p{
+  margin-top:10px;
+  font-size:18px;
+}
+
+/* MOVIES */
+.movies{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap:20px;
+  padding:30px;
+}
+
+.card{
+  background:#111;
+  border-radius:10px;
+  overflow:hidden;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:scale(1.08);
+}
+
+.card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+.card h3{
+  padding:10px;
+  font-size:15px;
+  text-align:center;
+}
